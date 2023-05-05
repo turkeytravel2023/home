@@ -10866,7 +10866,10 @@ margin: 0 auto;
 z-index: 0;
 }
 .carousel-control-prev:hover, .carousel-control-next:hover{
-background-color: rgba(1, 25, 54, 0.3);
+background-color: rgba(1, 25, 54, 0.4);
+}
+.carousel-control-prev, .carousel-control-next{
+background-color: rgba(1, 25, 54, 0.1);
 }
 #carouselExampleIndicators2{
 width: 90%;
@@ -11001,33 +11004,40 @@ width: 80%;
 padding-left: 10%;
 padding-bottom: 10%
   }
-.calendar{
-  margin: 0 auto;
-  width: 70%;
-}
 li{
-  margin: 2% 0 2% 10%;
+  margin: 2% 0 2% 0%;
 }
 h4{
-  font-family: cursive; 
+  font-family: Goudy Old Style; 
   font-size: 1.2rem; 
   margin: 5%;
 }
+#dates {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#dates td, #dates th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+#dates tr:nth-child(even){
+background-color: rgba(1, 25, 54, 0.2);
+}
+#dates th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(1, 25, 54, 0.5);
+  color: white;
+}
  
 @media screen and (max-width: 992px){
-  .row {
-  display: block;
-  }
-  .column {
-    width: 60%;
-    margin: 0 auto;
-    padding: 5px;
-  }
   .row1 {
   display: block;
   }
   .column1 {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     padding: 5px;
   }
@@ -11072,4 +11082,9 @@ display: inline-block;
     padding-left: 20px;
     padding-top: 10%;
     float: right;
+}
+#carouselExampleIndicators, #carouselExampleIndicators2{
+width: 100%;
+margin: 0 auto;
+z-index: 0;
 }
